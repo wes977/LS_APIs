@@ -14,7 +14,7 @@ namespace LS_APIs.Controllers
         [SwaggerOperation("GetAll")]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "Every", "Thing" };
         }
 
         // GET api/Companies/5
@@ -23,8 +23,36 @@ namespace LS_APIs.Controllers
         [SwaggerResponse(HttpStatusCode.NotFound)]
         public string Get(int id)
         {
-            return "value";
+            return "ID";
         }
+
+        //// GET api/Companies/5
+        //[SwaggerOperation("GetByName")]
+        //[SwaggerResponse(HttpStatusCode.OK)]
+        //[SwaggerResponse(HttpStatusCode.NotFound)]
+        //public string GetCompanyName(string companyName)
+        //{
+        //    return "Name";
+        //}
+
+        //// GET api/Companies/5
+        //[SwaggerOperation("GetByActive")]
+        //[SwaggerResponse(HttpStatusCode.OK)]
+        //[SwaggerResponse(HttpStatusCode.NotFound)]
+        //public string GetActive(int companyActive)
+        //{
+        //    return "Active";
+        //}
+
+        //// GET SEARCH 
+        //// GET api/Companies/5
+        //[SwaggerOperation("GetSearch")]
+        //[SwaggerResponse(HttpStatusCode.OK)]
+        //[SwaggerResponse(HttpStatusCode.NotFound)]
+        //public string GetSearch(string searchParameters)
+        //{
+        //    return "Search";
+        //}
 
         // POST api/Companies
         [SwaggerOperation("Create")]
